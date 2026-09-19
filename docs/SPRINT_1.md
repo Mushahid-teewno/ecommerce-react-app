@@ -29,10 +29,10 @@
 
 ```mermaid
 erDiagram
-    USERS ||--0{ ORDERS : places
+    USERS ||--o{ ORDERS : places
     ORDERS ||--|{ ORDER_ITEMS : contains
-    PRODUCTS ||--0{ ORDER_ITEMS : ordered_in
-    CATEGORIES ||--0{ PRODUCTS : categorizes
+    PRODUCTS ||--o{ ORDER_ITEMS : ordered_in
+    CATEGORIES ||--o{ PRODUCTS : categorizes
     USERS ||--o{ CARTS : manages
     CARTS ||--|{ CART_ITEMS : contains
     PRODUCTS ||--o{ CART_ITEMS : included_in
